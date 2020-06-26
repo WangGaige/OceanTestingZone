@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Configuration Type="Configuration.ConfigurationState" Version="1.0.0.12" Caption="Plugin Config">
+  <Extensions Type="Extensibility.ExtensionCollection">
+    <Workspaces.WorkspaceExtension EntityId="9db29eda-8647-4a4e-aa17-9a7898ef4ba5" />
+    <Relationships.RelationshipsExtension>
+      <Associations Type="Relationships.Associations">
+        <Relationships.Association RelationshipId="Configuration-Section" Role="Configuration">
+          <AssociatedEnds Type="AssociatedEnds">
+            <AssociatedEnd Role="Section">
+              <Entities Type="Entities">
+                <EntityId Value="0d6d0724-18f9-4357-86eb-24abad218568" />
+                <EntityId Value="7abdf9bb-4152-49d9-a482-53ee65f3fbf7" />
+                <EntityId Value="4c9a914b-1d4c-451e-8850-aa4fc099a6fd" />
+                <EntityId Value="01725333-b999-4406-a2ad-91eac546a8be" />
+                <EntityId Value="1db349dc-7253-416f-9557-126e370224cb" />
+                <EntityId Value="7e9d81ce-4bf5-4a8c-9cf1-5111c98ceb2b" />
+                <EntityId Value="a75751a1-e99d-4841-8a4b-344ad35c8b5a" />
+                <EntityId Value="d5f7a576-fd61-401b-90a2-a1adf789bfbb" />
+              </Entities>
+            </AssociatedEnd>
+          </AssociatedEnds>
+        </Relationships.Association>
+      </Associations>
+    </Relationships.RelationshipsExtension>
+  </Extensions>
+  <Sections Type="Extesibility.ConfigurationSectionCollection">
+    <Commands.CommandSection Version="1.0.0.7">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="0d6d0724-18f9-4357-86eb-24abad218568" />
+        <Relationships.RelationshipsExtension>
+          <Associations Type="Relationships.Associations">
+            <Relationships.Association RelationshipId="Configuration-Section" Role="Section">
+              <AssociatedEnds Type="AssociatedEnds">
+                <AssociatedEnd Role="Configuration">
+                  <Entities Type="Entities">
+                    <EntityId Value="9db29eda-8647-4a4e-aa17-9a7898ef4ba5" />
+                  </Entities>
+                </AssociatedEnd>
+              </AssociatedEnds>
+            </Relationships.Association>
+            <Relationships.Association RelationshipId="CommandSection-CommandInfo" Role="CommandSection">
+              <AssociatedEnds Type="AssociatedEnds">
+                <AssociatedEnd Role="CommandInfo">
+                  <Entities Type="Entities">
+                    <EntityId Value="f7dc54d1-a4b5-406f-900c-4105be1ee002" />
+                    <EntityId Value="5c7a92e6-66e2-49c9-bd12-a8f6977939c1" />
+                    <EntityId Value="d77f762c-271d-4f35-8a3a-0b0acdf4cf4a" />
+                  </Entities>
+                </AssociatedEnd>
+              </AssociatedEnds>
+            </Relationships.Association>
+          </Associations>
+        </Relationships.RelationshipsExtension>
+      </Extensions>
+      <Commands Type="Commands.CommandCollection">
+        <CommandInfo Id="OceanTestingZone.SeismicDataProbing" Type="Commands.SimpleCommand">
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension>
+              <Attributes Type="Attributes.AttributeCollection">
+                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="SeismicDataProbing" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.32" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_32.png}" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.16" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_16.png}" />
+              </Attributes>
+            </Attributes.AttributesExtension>
+            <Workspaces.WorkspaceExtension EntityId="f7dc54d1-a4b5-406f-900c-4105be1ee002" />
+            <Relationships.RelationshipsExtension>
+              <Associations Type="Relationships.Associations">
+                <Relationships.Association RelationshipId="CommandSection-CommandInfo" Role="CommandInfo">
+                  <AssociatedEnds Type="AssociatedEnds">
+                    <AssociatedEnd Role="CommandSection">
+                      <Entities Type="Entities">
+                        <EntityId Value="0d6d0724-18f9-4357-86eb-24abad218568" />
+                      </Entities>
+                    </AssociatedEnd>
+                  </AssociatedEnds>
+                </Relationships.Association>
+              </Associations>
+            </Relationships.RelationshipsExtension>
+          </Extensions>
+        </CommandInfo>
+        <CommandInfo Id="OceanTestingZone.AddSCAL" Type="Commands.SimpleCommand">
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension>
+              <Attributes Type="Attributes.AttributeCollection">
+                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="AddSCAL" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.32" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_32.png}" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.16" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_16.png}" />
+              </Attributes>
+            </Attributes.AttributesExtension>
+            <Workspaces.WorkspaceExtension EntityId="5c7a92e6-66e2-49c9-bd12-a8f6977939c1" />
+            <Relationships.RelationshipsExtension>
+              <Associations Type="Relationships.Associations">
+                <Relationships.Association RelationshipId="CommandSection-CommandInfo" Role="CommandInfo">
+                  <AssociatedEnds Type="AssociatedEnds">
+                    <AssociatedEnd Role="CommandSection">
+                      <Entities Type="Entities">
+                        <EntityId Value="0d6d0724-18f9-4357-86eb-24abad218568" />
+                      </Entities>
+                    </AssociatedEnd>
+                  </AssociatedEnds>
+                </Relationships.Association>
+              </Associations>
+            </Relationships.RelationshipsExtension>
+          </Extensions>
+        </CommandInfo>
+        <CommandInfo Id="SeisCube_Z_intvel" Type="Commands.SimpleCommand">
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension>
+              <Attributes Type="Attributes.AttributeCollection">
+                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="SeisCube_Z_intvel" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.32" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_32.png}" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.16" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_16.png}" />
+              </Attributes>
+            </Attributes.AttributesExtension>
+            <Workspaces.WorkspaceExtension EntityId="d77f762c-271d-4f35-8a3a-0b0acdf4cf4a" />
+            <Relationships.RelationshipsExtension>
+              <Associations Type="Relationships.Associations">
+                <Relationships.Association RelationshipId="CommandSection-CommandInfo" Role="CommandInfo">
+                  <AssociatedEnds Type="AssociatedEnds">
+                    <AssociatedEnd Role="CommandSection">
+                      <Entities Type="Entities">
+                        <EntityId Value="0d6d0724-18f9-4357-86eb-24abad218568" />
+                      </Entities>
+                    </AssociatedEnd>
+                  </AssociatedEnds>
+                </Relationships.Association>
+              </Associations>
+            </Relationships.RelationshipsExtension>
+          </Extensions>
+        </CommandInfo>
+        <CommandInfo Id="well_probing" Type="Commands.SimpleCommand">
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension>
+              <Attributes Type="Attributes.AttributeCollection">
+                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="well_probing" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.32" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_32.png}" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.16" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_16.png}" />
+              </Attributes>
+            </Attributes.AttributesExtension>
+          </Extensions>
+        </CommandInfo>
+        <CommandInfo Id="MultiThreadSeismicData" Type="Commands.SimpleCommand">
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension>
+              <Attributes Type="Attributes.AttributeCollection">
+                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="MultiThreadSeismicData" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.32" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_32.png}" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.16" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_16.png}" />
+              </Attributes>
+            </Attributes.AttributesExtension>
+          </Extensions>
+        </CommandInfo>
+        <CommandInfo Id="GetTemplateIcon" Type="Commands.SimpleCommand">
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension>
+              <Attributes Type="Attributes.AttributeCollection">
+                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="GetTemplateIcon" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.32" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_32.png}" />
+                <Attributes.AttributeValue AttributeId="Appearance.Image.16" ValueType="Appearance.ImageData" Value="{Uri:pack://application:,,,/Slb.Ocean.Petrel.Resources;component/images/modules_16.png}" />
+              </Attributes>
+            </Attributes.AttributesExtension>
+          </Extensions>
+        </CommandInfo>
+      </Commands>
+      <CommandGroups Type="Commands.CommandGroupCollection" />
+    </Commands.CommandSection>
+    <ToolContainers.RibbonSection Version="1.0.0.10">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="7abdf9bb-4152-49d9-a482-53ee65f3fbf7" />
+        <Relationships.RelationshipsExtension>
+          <Associations Type="Relationships.Associations">
+            <Relationships.Association RelationshipId="Configuration-Section" Role="Section">
+              <AssociatedEnds Type="AssociatedEnds">
+                <AssociatedEnd Role="Configuration">
+                  <Entities Type="Entities">
+                    <EntityId Value="9db29eda-8647-4a4e-aa17-9a7898ef4ba5" />
+                  </Entities>
+                </AssociatedEnd>
+              </AssociatedEnds>
+            </Relationships.Association>
+            <Relationships.Association RelationshipId="RibbonSection-Ribbon" Role="RibbonSection">
+              <AssociatedEnds Type="AssociatedEnds">
+                <AssociatedEnd Role="Ribbon">
+                  <Entities Type="Entities">
+                    <EntityId Value="3ebc28f5-b298-4cb2-8784-f186f71f4bc3" />
+                  </Entities>
+                </AssociatedEnd>
+              </AssociatedEnds>
+            </Relationships.Association>
+          </Associations>
+        </Relationships.RelationshipsExtension>
+      </Extensions>
+      <Ribbons Type="Extesibility.RibbonCollection">
+        <ToolContainers.Ribbon Id="9f42ae22-15c5-4351-9057-5921be95969d">
+          <Extensions Type="Extensibility.ExtensionCollection">
+            <Attributes.AttributesExtension>
+              <Attributes Type="Attributes.AttributeCollection">
+                <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="Platform" />
+              </Attributes>
+            </Attributes.AttributesExtension>
+            <Workspaces.WorkspaceExtension EntityId="3ebc28f5-b298-4cb2-8784-f186f71f4bc3" />
+            <Relationships.RelationshipsExtension>
+              <Associations Type="Relationships.Associations">
+                <Relationships.Association RelationshipId="Ribbon-RibbonTab" Role="Ribbon">
+                  <AssociatedEnds Type="AssociatedEnds">
+                    <AssociatedEnd Role="RibbonTab">
+                      <Entities Type="Entities">
+                        <EntityId Value="aa62019c-580a-43a4-9d14-8df7217e6830" />
+                      </Entities>
+                    </AssociatedEnd>
+                  </AssociatedEnds>
+                </Relationships.Association>
+                <Relationships.Association RelationshipId="RibbonSection-Ribbon" Role="Ribbon">
+                  <AssociatedEnds Type="AssociatedEnds">
+                    <AssociatedEnd Role="RibbonSection">
+                      <Entities Type="Entities">
+                        <EntityId Value="7abdf9bb-4152-49d9-a482-53ee65f3fbf7" />
+                      </Entities>
+                    </AssociatedEnd>
+                  </AssociatedEnds>
+                </Relationships.Association>
+              </Associations>
+            </Relationships.RelationshipsExtension>
+          </Extensions>
+          <Tabs Type="Extesibility.TabCollection">
+            <ToolContainers.RibbonTab Id="4d57c285-45e8-4264-ad10-35de852de345">
+              <Extensions Type="Extensibility.ExtensionCollection">
+                <Attributes.AttributesExtension>
+                  <Attributes Type="Attributes.AttributeCollection">
+                    <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="OceanTestingZone" />
+                  </Attributes>
+                </Attributes.AttributesExtension>
+                <Workspaces.WorkspaceExtension EntityId="aa62019c-580a-43a4-9d14-8df7217e6830" />
+                <Relationships.RelationshipsExtension>
+                  <Associations Type="Relationships.Associations">
+                    <Relationships.Association RelationshipId="RibbonTab-RibbonTabGroup" Role="RibbonTab">
+                      <AssociatedEnds Type="AssociatedEnds">
+                        <AssociatedEnd Role="RibbonTabGroup">
+                          <Entities Type="Entities">
+                            <EntityId Value="fe0afe30-3983-4aa5-bde4-319c00f265a9" />
+                          </Entities>
+                        </AssociatedEnd>
+                      </AssociatedEnds>
+                    </Relationships.Association>
+                    <Relationships.Association RelationshipId="Ribbon-RibbonTab" Role="RibbonTab">
+                      <AssociatedEnds Type="AssociatedEnds">
+                        <AssociatedEnd Role="Ribbon">
+                          <Entities Type="Entities">
+                            <EntityId Value="3ebc28f5-b298-4cb2-8784-f186f71f4bc3" />
+                          </Entities>
+                        </AssociatedEnd>
+                      </AssociatedEnds>
+                    </Relationships.Association>
+                  </Associations>
+                </Relationships.RelationshipsExtension>
+              </Extensions>
+              <TabGroups Type="Extesibility.TabGroupCollection">
+                <ToolContainers.RibbonTabGroup Id="1b62613e-c0ab-4aec-accd-495e23d0ef21">
+                  <Extensions Type="Extensibility.ExtensionCollection">
+                    <Attributes.AttributesExtension>
+                      <Attributes Type="Attributes.AttributeCollection">
+                        <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="Group1" />
+                      </Attributes>
+                    </Attributes.AttributesExtension>
+                    <Workspaces.WorkspaceExtension EntityId="fe0afe30-3983-4aa5-bde4-319c00f265a9" />
+                    <Relationships.RelationshipsExtension>
+                      <Associations Type="Relationships.Associations">
+                        <Relationships.Association RelationshipId="RibbonTab-RibbonTabGroup" Role="RibbonTabGroup">
+                          <AssociatedEnds Type="AssociatedEnds">
+                            <AssociatedEnd Role="RibbonTab">
+                              <Entities Type="Entities">
+                                <EntityId Value="aa62019c-580a-43a4-9d14-8df7217e6830" />
+                              </Entities>
+                            </AssociatedEnd>
+                          </AssociatedEnds>
+                        </Relationships.Association>
+                      </Associations>
+                    </Relationships.RelationshipsExtension>
+                  </Extensions>
+                  <Tools Type="Tools.ToolCollection">
+                    <Tools.ButtonTool CommandId="OceanTestingZone.SeismicDataProbing">
+                      <Extensions Type="Extensibility.ExtensionCollection">
+                        <Attributes.AttributesExtension>
+                          <Attributes Type="Attributes.AttributeCollection">
+                            <Attributes.AttributeValue AttributeId="Appearance.ToolStyle" ValueType="Tools.ToolStyle" Value="SmallImageAndText" />
+                            <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="SeismicDataProbing" />
+                          </Attributes>
+                        </Attributes.AttributesExtension>
+                      </Extensions>
+                    </Tools.ButtonTool>
+                    <Tools.ButtonTool CommandId="OceanTestingZone.AddSCAL">
+                      <Extensions Type="Extensibility.ExtensionCollection">
+                        <Attributes.AttributesExtension>
+                          <Attributes Type="Attributes.AttributeCollection">
+                            <Attributes.AttributeValue AttributeId="Appearance.ToolStyle" ValueType="Tools.ToolStyle" Value="SmallImageAndText" />
+                            <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="AddSCAL" />
+                          </Attributes>
+                        </Attributes.AttributesExtension>
+                      </Extensions>
+                    </Tools.ButtonTool>
+                    <Tools.ButtonTool CommandId="SeisCube_Z_intvel">
+                      <Extensions Type="Extensibility.ExtensionCollection">
+                        <Attributes.AttributesExtension>
+                          <Attributes Type="Attributes.AttributeCollection">
+                            <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="SeisCube_Z_intvel" />
+                          </Attributes>
+                        </Attributes.AttributesExtension>
+                      </Extensions>
+                    </Tools.ButtonTool>
+                    <Tools.ButtonTool CommandId="well_probing">
+                      <Extensions Type="Extensibility.ExtensionCollection">
+                        <Attributes.AttributesExtension>
+                          <Attributes Type="Attributes.AttributeCollection">
+                            <Attributes.AttributeValue AttributeId="Appearance.ToolStyle" ValueType="Tools.ToolStyle" Value="SmallImageAndText" />
+                            <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="well_probing" />
+                          </Attributes>
+                        </Attributes.AttributesExtension>
+                      </Extensions>
+                    </Tools.ButtonTool>
+                    <Tools.ButtonTool CommandId="MultiThreadSeismicData">
+                      <Extensions Type="Extensibility.ExtensionCollection">
+                        <Attributes.AttributesExtension>
+                          <Attributes Type="Attributes.AttributeCollection">
+                            <Attributes.AttributeValue AttributeId="Appearance.ToolStyle" ValueType="Tools.ToolStyle" Value="SmallImageAndText" />
+                            <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="MultiThreadSeismicData" />
+                          </Attributes>
+                        </Attributes.AttributesExtension>
+                      </Extensions>
+                    </Tools.ButtonTool>
+                    <Tools.ButtonTool CommandId="GetTemplateIcon">
+                      <Extensions Type="Extensibility.ExtensionCollection">
+                        <Attributes.AttributesExtension>
+                          <Attributes Type="Attributes.AttributeCollection">
+                            <Attributes.AttributeValue AttributeId="Appearance.ToolStyle" ValueType="Tools.ToolStyle" Value="SmallImageAndText" />
+                            <Attributes.AttributeValue AttributeId="Appearance.Caption" ValueType="System.String" Value="GetTemplateIcon" />
+                          </Attributes>
+                        </Attributes.AttributesExtension>
+                      </Extensions>
+                    </Tools.ButtonTool>
+                  </Tools>
+                </ToolContainers.RibbonTabGroup>
+              </TabGroups>
+            </ToolContainers.RibbonTab>
+          </Tabs>
+          <ContextMenu Type="ToolContainers.RibbonContextMenu">
+            <Tools Type="Tools.ToolCollection" />
+          </ContextMenu>
+          <Backstage Type="ToolContainers.RibbonBackstage">
+            <LeftTools Type="Tools.ToolCollection" />
+            <RightTools Type="Tools.ToolCollection" />
+            <FooterTools Type="Tools.ToolCollection" />
+          </Backstage>
+          <Backstage2010 Type="ToolContainers.RibbonBackstage2010">
+            <Tools Type="Tools.ToolCollection" />
+          </Backstage2010>
+          <QuickAccessToolbar Type="ToolContainers.QuickAccessToolbar">
+            <Tools Type="Tools.ToolCollection" />
+          </QuickAccessToolbar>
+          <TabToolbar Type="ToolContainers.RibbonTabToolbar">
+            <Tools Type="Tools.ToolCollection" />
+          </TabToolbar>
+        </ToolContainers.Ribbon>
+      </Ribbons>
+    </ToolContainers.RibbonSection>
+    <ToolContainers.PaletteSection Version="1.0.0.7">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="4c9a914b-1d4c-451e-8850-aa4fc099a6fd" />
+        <Relationships.RelationshipsExtension>
+          <Associations Type="Relationships.Associations">
+            <Relationships.Association RelationshipId="Configuration-Section" Role="Section">
+              <AssociatedEnds Type="AssociatedEnds">
+                <AssociatedEnd Role="Configuration">
+                  <Entities Type="Entities">
+                    <EntityId Value="9db29eda-8647-4a4e-aa17-9a7898ef4ba5" />
+                  </Entities>
+                </AssociatedEnd>
+              </AssociatedEnds>
+            </Relationships.Association>
+          </Associations>
+        </Relationships.RelationshipsExtension>
+      </Extensions>
+      <Palettes Type="Extesibility.PaletteCollection" />
+    </ToolContainers.PaletteSection>
+    <ToolContainers.MiniToolbarSection Version="1.0.0.5">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="01725333-b999-4406-a2ad-91eac546a8be" />
+        <Relationships.RelationshipsExtension>
+          <Associations Type="Relationships.Associations">
+            <Relationships.Association RelationshipId="Configuration-Section" Role="Section">
+              <AssociatedEnds Type="AssociatedEnds">
+                <AssociatedEnd Role="Configuration">
+                  <Entities Type="Entities">
+                    <EntityId Value="9db29eda-8647-4a4e-aa17-9a7898ef4ba5" />
+                  </Entities>
+                </AssociatedEnd>
+              </AssociatedEnds>
+            </Relationships.Association>
+          </Associations>
+        </Relationships.RelationshipsExtension>
+      </Extensions>
+      <MiniToolbars Type="Extesibility.MiniToolbarCollection" />
+    </ToolContainers.MiniToolbarSection>
+    <Configuration.ResourceSection Version="1.0.0.8">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="1db349dc-7253-416f-9557-126e370224cb" />
+        <Relationships.RelationshipsExtension>
+          <Associations Type="Relationships.Associations">
+            <Relationships.Association RelationshipId="Configuration-Section" Role="Section">
+              <AssociatedEnds Type="AssociatedEnds">
+                <AssociatedEnd Role="Configuration">
+                  <Entities Type="Entities">
+                    <EntityId Value="9db29eda-8647-4a4e-aa17-9a7898ef4ba5" />
+                  </Entities>
+                </AssociatedEnd>
+              </AssociatedEnds>
+            </Relationships.Association>
+          </Associations>
+        </Relationships.RelationshipsExtension>
+      </Extensions>
+      <Resources Type="Configuration.ResourceCollection" />
+    </Configuration.ResourceSection>
+    <Rules.RuleSection Version="1.0.0.4">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="7e9d81ce-4bf5-4a8c-9cf1-5111c98ceb2b" />
+        <Relationships.RelationshipsExtension>
+          <Associations Type="Relationships.Associations">
+            <Relationships.Association RelationshipId="Configuration-Section" Role="Section">
+              <AssociatedEnds Type="AssociatedEnds">
+                <AssociatedEnd Role="Configuration">
+                  <Entities Type="Entities">
+                    <EntityId Value="9db29eda-8647-4a4e-aa17-9a7898ef4ba5" />
+                  </Entities>
+                </AssociatedEnd>
+              </AssociatedEnds>
+            </Relationships.Association>
+          </Associations>
+        </Relationships.RelationshipsExtension>
+      </Extensions>
+      <Rules Type="Rules.RuleCollection" />
+    </Rules.RuleSection>
+    <Configuration.FeatureSection Version="1.0.0.0">
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="a75751a1-e99d-4841-8a4b-344ad35c8b5a" />
+        <Relationships.RelationshipsExtension>
+          <Associations Type="Relationships.Associations">
+            <Relationships.Association RelationshipId="Configuration-Section" Role="Section">
+              <AssociatedEnds Type="AssociatedEnds">
+                <AssociatedEnd Role="Configuration">
+                  <Entities Type="Entities">
+                    <EntityId Value="9db29eda-8647-4a4e-aa17-9a7898ef4ba5" />
+                  </Entities>
+                </AssociatedEnd>
+              </AssociatedEnds>
+            </Relationships.Association>
+          </Associations>
+        </Relationships.RelationshipsExtension>
+      </Extensions>
+      <Features Type="Configuration.FeatureCollection" />
+    </Configuration.FeatureSection>
+    <SceneSection>
+      <Extensions Type="Extensibility.ExtensionCollection">
+        <Workspaces.WorkspaceExtension EntityId="d5f7a576-fd61-401b-90a2-a1adf789bfbb" />
+        <Relationships.RelationshipsExtension>
+          <Associations Type="Relationships.Associations">
+            <Relationships.Association RelationshipId="Configuration-Section" Role="Section">
+              <AssociatedEnds Type="AssociatedEnds">
+                <AssociatedEnd Role="Configuration">
+                  <Entities Type="Entities">
+                    <EntityId Value="9db29eda-8647-4a4e-aa17-9a7898ef4ba5" />
+                  </Entities>
+                </AssociatedEnd>
+              </AssociatedEnds>
+            </Relationships.Association>
+          </Associations>
+        </Relationships.RelationshipsExtension>
+      </Extensions>
+      <Scenes Type="SceneCollection" />
+    </SceneSection>
+  </Sections>
+</Configuration>
